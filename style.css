@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.jumbotron {
+    text-align: center;
+    padding: 1rem;
+}
+
+.lead {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 150%;
+    color: orange;
+    font-weight: bolder;
+}
+
+.row {
+    margin: 0 -10px;
+}
+
+.row::after {
+    clear: both;
+    content: "";
+    diplay: table;
+}
+
+.column {
+    padding: 0 10px;
+    float: left;
+    width: 25%;
+}
+
+.card {
+    box-shadow: 0 8px 8px 0 #888888;
+    font-size: 14px;
+    padding: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {   
+.column {
+    width: 100%;
+    margin-bottom: 30px;
+    display: block;
+} }
